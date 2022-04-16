@@ -166,7 +166,7 @@ only screen and (min-resolution: 2dppx) {
   line-height: 26px;
   color: #3D3B48;
 }
-.site-container-form__input:not(:focus):invalid{
+.site-container-form__input:not(:focus):not(:placeholder-shown):invalid{
   border: 2px solid var(--color-error);
 }
 .site-container-form-error--firstname{
@@ -175,38 +175,38 @@ only screen and (min-resolution: 2dppx) {
   opacity: 0;
 }
 
-.site-container-form__input--firstname:not(:focus):invalid + .site-container-form-invalid--firstname{
+.site-container-form__input--firstname:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--firstname{
   top: 80px;
   opacity: 1 ;
 }
-.site-container-form__input--firstname:not(:focus):invalid ~ .site-container-form-error--firstname{
+.site-container-form__input--firstname:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--firstname{
   top: 51px;
   opacity: 1;
 }
-.site-container-form__input--lastname:not(:focus):invalid + .site-container-form-invalid--lastname{
+.site-container-form__input--lastname:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--lastname{
   top: 150px;
   opacity: 1;
 
 }
-.site-container-form__input--lastname:not(:focus):invalid ~ .site-container-form-error--lastname{
+.site-container-form__input--lastname:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--lastname{
   top: 120px;
   opacity: 1;
 
 }
 
-.site-container-form__input--email:not(:focus):invalid + .site-container-form-invalid--email{
+.site-container-form__input--email:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--email{
   top: 215px;
   opacity: 1;
 
 }
-.site-container-form__input--email:not(:focus):invalid ~ .site-container-form-error--email{
+.site-container-form__input--email:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--email{
   top: 187px;
   opacity: 1;
 
 }
 .site-container-form__input--email:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-placeholder{
   padding-right: 50px;
-  top: 172px;
+  top: 175px;
   left: 52px ;
   font-weight: 600;
   font-size: 14px;
@@ -216,11 +216,11 @@ only screen and (min-resolution: 2dppx) {
   opacity: 1;
 }
 
-.site-container-form__input--password:not(:focus):invalid + .site-container-form-invalid--password{
+.site-container-form__input--password:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--password{
   top: 285px;
   opacity: 1;
 }
-.site-container-form__input--password:not(:focus):invalid ~ .site-container-form-error--password{
+.site-container-form__input--password:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--password{
   top: 253px;
   opacity: 1;
 }
@@ -324,24 +324,24 @@ only screen and (min-resolution: 2dppx) {
     padding-top: 18px;
     padding-bottom: 18px;
   }
-  .site-container-form__input--firstname:not(:focus):invalid ~ .site-container-form-error--firstname {
-    top: 36px;
+  .site-container-form__input--firstname:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--firstname {
+    top: 37px;
   }
   
-.site-container-form__input--firstname:not(:focus):invalid + .site-container-form-invalid--firstname{
+.site-container-form__input--firstname:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--firstname{
   top: 63px;
 
 }
 
-.site-container-form__input--lastname:not(:focus):invalid ~ .site-container-form-error--lastname{
+.site-container-form__input--lastname:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--lastname{
   top: 104px;
 }
 
-.site-container-form__input--lastname:not(:focus):invalid + .site-container-form-invalid--lastname{
+.site-container-form__input--lastname:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--lastname{
   top: 132px;
 }
 
-.site-container-form__input--email:not(:focus):invalid ~ .site-container-form-error--email{
+.site-container-form__input--email:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--email{
   top: 173px;
 }
 
@@ -350,15 +350,15 @@ only screen and (min-resolution: 2dppx) {
     left: 44px;
 }
 
-.site-container-form__input--email:not(:focus):invalid + .site-container-form-invalid--email{
+.site-container-form__input--email:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--email{
   top: 200px;
 }
 
-.site-container-form__input--password:not(:focus):invalid ~ .site-container-form-error--password{
+.site-container-form__input--password:not(:focus):not(:placeholder-shown):invalid ~ .site-container-form-error--password{
   top: 243px;
 }
 
-.site-container-form__input--password:not(:focus):invalid + .site-container-form-invalid--password{
+.site-container-form__input--password:not(:focus):not(:placeholder-shown):invalid + .site-container-form-invalid--password{
   top: 269px;
 }
   .site-container-form{
